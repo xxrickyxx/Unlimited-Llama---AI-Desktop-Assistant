@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Unlimited Llama](assets/icon.png)
+![Unlimited Llama](icon.png)
 
 **Un assistente AI desktop completo con chat, ricerca web, sintesi vocale e OCR**
 
