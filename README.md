@@ -30,7 +30,9 @@
 ## 📦 Download
 
 ### Versione Portable (Raccomandata)
+[![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
 [![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)
+
 
 
 🚀 Guida Rapida
