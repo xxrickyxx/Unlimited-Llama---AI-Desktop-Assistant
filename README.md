@@ -16,8 +16,6 @@
 
 </div>
 
-> ⚠️ *Currently, Unlimited Llama is available only in Italian. A multilingual English version is coming soon — thank you for your patience!* 🇬🇧
-
 ---
 
 ## ✨ Features
