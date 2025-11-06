@@ -13,7 +13,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-Supported-success)](https://www.microsoft.com/windows)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-
+[![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)
 </div>
 
 ## ✨ Caratteristiche
