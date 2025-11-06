@@ -27,5 +27,6 @@
 ## 📦 Download
 
 ### Versione Portable (Raccomandata)
-Scarica l'ultima release da [Google Drive]([https://github.com/tuonome/unlimited-llama/releases](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)) ed esegui il file.
+[![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)
+
 
