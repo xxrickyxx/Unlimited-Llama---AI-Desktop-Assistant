@@ -109,3 +109,9 @@ choco install tesseract
 # O scarica da: https://github.com/UB-Mannheim/tesseract/wiki
 
 
+✨ Features
+
+⚠️ Currently, Unlimited Llama is available only in Italian.
+The English version is coming soon — thank you for your patience! 🇬🇧
+
+
