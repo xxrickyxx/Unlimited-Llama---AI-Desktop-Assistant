@@ -30,6 +30,55 @@
 [![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)
 
 
+🚀 Guida Rapida
+Primo Avvio
+Carica un modello: Vai in 🤖 Modello → 📁 Carica Modello
+
+Inizia a chattare: Scrivi nel box in basso e premi Invio
+
+Salva sessioni: Le conversazioni si salvano automaticamente
+
+Funzionalità Principali
+🔍 Ricerca Web
+Attiva/disattiva con il toggle 🌐 Ricerca Web
+
+Funziona automaticamente per domande su notizie, informazioni recenti, locali
+
+Mostra le fonti utilizzate
+
+🔊 Sintesi Vocale
+Attiva con 🔊 TTS nella sidebar
+
+L'assistente legge le risposte ad alta voce
+
+Usa 🔇 STOP per interrompere
+
+🎤 Riconoscimento Vocale
+🎤 per input vocale singolo
+
+🎤 Inizia Ascolto per modalità continuativa
+
+📷 OCR da Immagini
+Clicca 📷 OCR da Immagine
+
+Seleziona un'immagine (PNG, JPG, etc.)
+
+Il testo estratto viene inserito automaticamente nella chat
+
+🛠️ Risoluzione Problemi
+❌ "Modello non trovato"
+Assicurati che il file GGUF sia nella cartella models/
+
+Verifica che il modello sia in formato GGUF
+
+Controlla che ci sia spazio su disco sufficiente
+
+❌ "Tesseract non trovato"
+Installa Tesseract OCR seguendo le istruzioni sopra
+
+Riavvia l'applicazione dopo l'installazione
+
+
 ## ⚙️ Requisiti di Sistema
 
 ### Minimi
