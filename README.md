@@ -2,7 +2,10 @@
 
 <div align="center">
 
-![Unlimited Llama](icon.png)
+<p align="center">
+  <img src="icon.png" alt="Unlimited Llama" width="128">
+</p>
+
 
 **Un assistente AI desktop completo con chat, ricerca web, sintesi vocale e OCR**
 
