@@ -6,112 +6,102 @@
   <img src="icon.png" alt="Unlimited Llama" width="128">
 </p>
 
-
-**Un assistente AI desktop completo con chat, ricerca web, sintesi vocale e OCR**
+**A complete AI desktop assistant with chat, web search, speech synthesis, and OCR.**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-Supported-success)](https://www.microsoft.com/windows)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-[![Download su Hugging face](http://huggingface.co/front/assets/huggingface_logo-noborder.svg)](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
+[![Download on Hugging Face](http://huggingface.co/front/assets/huggingface_logo-noborder.svg)](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
+
 </div>
 
-## ✨ Caratteristiche
+> ⚠️ *Currently, Unlimited Llama is available only in Italian. A multilingual English version is coming soon — thank you for your patience!* 🇬🇧
 
-- 💬 **Chat intelligente** con modelli GGUF locali
-- 🌐 **Ricerca web integrata** per informazioni aggiornate
-- 🔊 **Sintesi vocale** (TTS) e riconoscimento vocale (STT)
-- 📷 **OCR** per estrarre testo da immagini
-- 💾 **Gestione sessioni** avanzata
-- 🎛️ **Supporta qualsiasi dimensione modello LLM**
-- 🔌 **API server** compatibile con OpenAI
-- 📤 **Esportazione** in JSON, TXT e Markdown
+---
+
+## ✨ Features
+
+- 💬 **Smart chat** with local GGUF models  
+- 🌐 **Integrated web search** for up-to-date information  
+- 🔊 **Text-to-Speech (TTS)** and **Speech Recognition (STT)**  
+- 📷 **OCR** to extract text from images  
+- 💾 **Advanced session management**  
+- 🎛️ **Supports any LLM model size**  
+- 🔌 **OpenAI-compatible API server**  
+- 📤 **Export** in JSON, TXT, and Markdown  
+
+---
 
 ## 📦 Download
 
-[![Download su Hugging face]](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
+[![Download on Hugging Face](https://img.shields.io/badge/Download-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
 
+---
 
-🚀 Guida Rapida
-Primo Avvio
-Carica un modello: Vai in 🤖 Modello → 📁 Carica Modello
+## 🚀 Quick Start Guide
 
-Inizia a chattare: Scrivi nel box in basso e premi Invio
+**First Launch**
+1. Load a model → 🤖 *Model → 📁 Load Model*  
+2. Start chatting → type in the box below and press *Enter*  
+3. Sessions are saved automatically  
 
-Salva sessioni: Le conversazioni si salvano automaticamente
+---
 
-Funzionalità Principali
-🔍 Ricerca Web
-Attiva/disattiva con il toggle 🌐 Ricerca Web
+### 🔍 Web Search
+- Enable/disable using the 🌐 *Web Search* toggle  
+- Automatically searches for news, recent info, or local data  
+- Displays the sources used  
 
-Funziona automaticamente per domande su notizie, informazioni recenti, locali
+### 🔊 Speech Synthesis (TTS)
+- Enable via 🔊 *TTS* in the sidebar  
+- The assistant reads responses aloud  
+- Use 🔇 *STOP* to interrupt  
 
-Mostra le fonti utilizzate
+### 🎤 Speech Recognition
+- 🎤 *Voice Input* for single input  
+- 🎤 *Start Listening* for continuous mode  
 
-🔊 Sintesi Vocale
-Attiva con 🔊 TTS nella sidebar
+### 📷 OCR from Images
+- Click 📷 *Image OCR*  
+- Select an image (PNG, JPG, etc.)  
+- Extracted text is automatically inserted into the chat  
 
-L'assistente legge le risposte ad alta voce
+---
 
-Usa 🔇 STOP per interrompere
+## 🛠️ Troubleshooting
 
-🎤 Riconoscimento Vocale
-🎤 per input vocale singolo
+**❌ “Model not found”**  
+- Make sure the GGUF file is in the `/models` folder  
+- Verify the file format is `.gguf`  
+- Check that you have enough disk space  
 
-🎤 Inizia Ascolto per modalità continuativa
+**❌ “Tesseract not found”**  
+- Install Tesseract OCR following the instructions below  
+- Restart the application after installation  
 
-📷 OCR da Immagini
-Clicca 📷 OCR da Immagine
+---
 
-Seleziona un'immagine (PNG, JPG, etc.)
+## ⚙️ System Requirements
 
-Il testo estratto viene inserito automaticamente nella chat
+### Minimum
+- **OS:** Windows 10/11, macOS 10.15+, Linux (Ubuntu 18.04+)  
+- **RAM:** 8 GB (16 GB recommended)  
+- **Disk Space:** 2 GB + space for models  
+- **CPU:** Modern 64-bit processor  
 
-🛠️ Risoluzione Problemi
-❌ "Modello non trovato"
-Assicurati che il file GGUF sia nella cartella models/
+### Recommended
+- **RAM:** 16 GB+ for large models  
+- **GPU:** NVIDIA/AMD with CUDA or Metal (optional)  
+- **Disk Space:** 10 GB+ for large models  
 
-Verifica che il modello sia in formato GGUF
+---
 
-Controlla che ci sia spazio su disco sufficiente
+## 🔧 Installation
 
-❌ "Tesseract non trovato"
-Installa Tesseract OCR seguendo le istruzioni sopra
-
-Riavvia l'applicazione dopo l'installazione
-
-
-✨ Features
-
-⚠️ Currently, Unlimited Llama is available only in Italian.
-The English version is coming soon — thank you for your patience! 🇬🇧
-
-
-## ⚙️ Requisiti di Sistema
-
-### Minimi
-- **OS**: Windows 10/11, macOS 10.15+, Linux (Ubuntu 18.04+)
-- **RAM**: 8 GB (16 GB raccomandati)
-- **Spazio disco**: 2 GB + spazio per i modelli
-- **CPU**: Processore 64-bit moderno
-
-### Raccomandati
-- **RAM**: 16 GB+ per modelli grandi
-- **GPU**: NVIDIA/AMD con supporto CUDA/Metal (opzionale)
-- **Spazio**: 10 GB+ per modelli di grandi dimensioni
-
-## 🔧 Installazione
-
-### 1. Installazione di Tesseract OCR (Obbligatorio per OCR)
+### 1. Install Tesseract OCR (Required for OCR)
 
 #### Windows
 ```bash
-# Usando Chocolatey (raccomandato)
+# Using Chocolatey (recommended)
 choco install tesseract
-
-# O scarica da: https://github.com/UB-Mannheim/tesseract/wiki
-
-
-
-
-
