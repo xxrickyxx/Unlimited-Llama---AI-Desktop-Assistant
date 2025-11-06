@@ -79,6 +79,28 @@
 - Restart the application after installation  
 
 ---
+⚙️ Configuration
+Memory Optimization
+Memory Mapping (MMAP)
+What it does: Maps model directly from disk instead of loading entirely into RAM
+
+Benefits: Reduces RAM usage by up to 70%, faster startup
+
+Use when: Limited RAM, large models (>7GB)
+
+Performance: Slightly slower inference, much less RAM usage
+
+Memory Locking (MLOCK)
+What it does: Locks model in RAM preventing swap to disk
+
+Benefits: Maximum performance, consistent response times
+
+Use when: Abundant RAM, performance-critical applications
+
+Performance: Fastest inference, permanent RAM occupation
+---
+
+---
 
 ## ⚙️ System Requirements
 
