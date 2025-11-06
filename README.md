@@ -1,4 +1,4 @@
-# 🦙 Unlimited Llama - AI Desktop Assistant
+# 🦙 Unlimited Llama - AI Desktop Assistant AiLo Core
 
 <div align="center">
 
