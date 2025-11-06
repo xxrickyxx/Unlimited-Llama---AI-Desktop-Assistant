@@ -29,10 +29,7 @@
 
 ## 📦 Download
 
-### Versione Portable (Raccomandata)
 [![Download su Hugging face]](https://huggingface.co/xxrickyxx/Unlimited-Llama/blob/main/README.md)
-
-
 
 
 🚀 Guida Rapida
