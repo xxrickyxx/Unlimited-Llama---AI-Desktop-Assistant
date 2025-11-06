@@ -30,3 +30,28 @@
 [![Download su Google Drive](https://img.shields.io/badge/⬇️_Scarica-Google_Drive-success?logo=googledrive)](https://drive.google.com/file/d/1klw_VJO8c7LVoARuPcEVAJEiLK2dUllt/view?usp=sharing)
 
 
+## ⚙️ Requisiti di Sistema
+
+### Minimi
+- **OS**: Windows 10/11, macOS 10.15+, Linux (Ubuntu 18.04+)
+- **RAM**: 8 GB (16 GB raccomandati)
+- **Spazio disco**: 2 GB + spazio per i modelli
+- **CPU**: Processore 64-bit moderno
+
+### Raccomandati
+- **RAM**: 16 GB+ per modelli grandi
+- **GPU**: NVIDIA/AMD con supporto CUDA/Metal (opzionale)
+- **Spazio**: 10 GB+ per modelli di grandi dimensioni
+
+## 🔧 Installazione
+
+### 1. Installazione di Tesseract OCR (Obbligatorio per OCR)
+
+#### Windows
+```bash
+# Usando Chocolatey (raccomandato)
+choco install tesseract
+
+# O scarica da: https://github.com/UB-Mannheim/tesseract/wiki
+
+
