@@ -117,6 +117,23 @@ Performance: Fastest inference, permanent RAM occupation
 
 ---
 
+## 🔬 Goldbach Fiber-Sum Experiments
+
+An autonomous number-theory research tool is included for studying the
+Goldbach conjecture via the Hardy–Littlewood circle method.
+
+```bash
+# Run with defaults (N=1 000 000, W=1024, 50 minor-arc samples)
+python tools/goldbach_fiber_experiment.py
+
+# Quick self-check for small N
+python tools/goldbach_fiber_experiment.py --N 100 --W 16 --self-check
+```
+
+📖 Full documentation: [docs/goldbach/fiber_experiments.md](docs/goldbach/fiber_experiments.md)
+
+---
+
 ## 🔧 Installation
 
 ### 1. Install Tesseract OCR (Required for OCR)
