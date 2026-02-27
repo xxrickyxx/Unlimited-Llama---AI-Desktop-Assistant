@@ -117,6 +117,19 @@ Performance: Fastest inference, permanent RAM occupation
 
 ---
 
+## 📐 Circle Method Reference
+
+This repository includes mathematical reference documentation for the
+Hardy-Littlewood circle method used in Goldbach-type analysis.
+
+- **[docs/circle_method.md](docs/circle_method.md)** — Defines
+  Φ(α) = ∑_{p≤N} log p · e(αp) (Option B, prime-only log-weighted),
+  the fiber/DFT decomposition with k ≡ N (mod W), the relation to the
+  Λ-weighted sum S(α), the circle method identity for r_Λ(N), and the
+  approximation for r(N).
+
+---
+
 ## 🔧 Installation
 
 ### 1. Install Tesseract OCR (Required for OCR)
