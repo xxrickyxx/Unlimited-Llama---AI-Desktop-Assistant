@@ -28,6 +28,7 @@
 - 🎛️ **Supports any LLM model size**  
 - 🔌 **OpenAI-compatible API server**  
 - 📤 **Export** in JSON, TXT, and Markdown  
+- 🔢 **[Goldbach Experiment Tooling](#-goldbach-experiment-tooling)** — fiber DFT analysis of Goldbach's conjecture  
 
 ---
 
@@ -125,3 +126,44 @@ Performance: Fastest inference, permanent RAM occupation
 ```bash
 # Using Chocolatey (recommended)
 choco install tesseract
+
+```
+
+---
+
+## 🔢 Goldbach Experiment Tooling
+
+`goldbach_experiment.py` provides CLI-driven analysis of Goldbach's conjecture
+using **fiber DFT** on the reduced residue system of a wheel modulus **W**.
+
+### Core parameters
+
+| Parameter | Flag | Default | Description |
+|---|---|---|---|
+| **N** | `--N` | `100` | Target even integer (≥ 4). Must be even. |
+| **W** | `--W` | `30` | Wheel modulus (e.g. 30 = 2·3·5). |
+| **A** | `--A` | `1.0` | Amplitude / DFT scaling coefficient. |
+
+The key relationship is **k ≡ N (mod W)** — the residue class `k = N % W`
+selects which frequency bin of the fiber DFT carries the Goldbach signal.
+
+### Quick-start examples
+
+```bash
+# Default run (N=100, W=30, A=1.0)
+python goldbach_experiment.py
+
+# Custom N
+python goldbach_experiment.py --N 200
+
+# Full spectral output
+python goldbach_experiment.py --N 60 --W 30 --A 1.0 --spectrum
+
+# Batch scan with CSV export
+python goldbach_experiment.py --N-start 4 --N-end 200 --W 30 --output results.csv
+```
+
+For the complete parameter reference, DFT formula, and theory background see
+[docs/goldbach.md](docs/goldbach.md).
+
+---
