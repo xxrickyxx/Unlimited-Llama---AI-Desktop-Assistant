@@ -125,3 +125,73 @@ Performance: Fastest inference, permanent RAM occupation
 ```bash
 # Using Chocolatey (recommended)
 choco install tesseract
+```
+
+---
+
+## 🔬 Goldbach Fiber-Sum Experiment
+
+`goldbach_experiment.py` is a self-contained Python script that implements the
+**Hardy–Littlewood circle-method** experiment for probing Goldbach representations
+via exponential sums over primes.  It runs automatically with sensible defaults
+and requires no further user input.
+
+### Adesso! (Run now — zero setup)
+
+A single shell script installs the only dependency (numpy) and launches the
+experiment immediately with no further input:
+
+```bash
+bash run_experiment.sh
+```
+
+All CLI arguments are forwarded, so you can also do:
+
+```bash
+bash run_experiment.sh --save-csv results.csv
+bash run_experiment.sh --N 50000 --W 256 --A 2
+```
+
+### Quick start via Python directly (defaults: N=1 000 000, W=1024, A=6)
+
+```bash
+pip install numpy          # one-time
+python goldbach_experiment.py
+```
+
+### Run a genuine minor-arc experiment (reduce A so P < N)
+
+```bash
+python goldbach_experiment.py --A 2          # P ≈ 191 << N
+python goldbach_experiment.py --A 3          # P ≈ 2638 << N
+```
+
+### Save the full Fhat spectrum to CSV
+
+```bash
+python goldbach_experiment.py --A 2 --save-csv results.csv
+```
+
+### All CLI options
+
+```
+usage: goldbach_experiment.py [-h] [--N N] [--W W] [--A A]
+                               [--top-k K] [--seed SEED]
+                               [--save-csv PATH] [--quiet]
+
+  --N N          Upper prime bound (must be even)  [default: 1000000]
+  --W W          Window / frequency-bin count      [default: 1024]
+  --A A          Major-arc exponent P=(ln N)^A     [default: 6.0]
+  --top-k K      Top |Fhat| entries to display     [default: 10]
+  --seed SEED    Random seed for alpha sampling    [default: 42]
+  --save-csv PATH  Save Fhat spectrum to CSV file
+  --quiet        Suppress progress messages
+```
+
+### Mathematical background
+
+See [`docs/goldbach_math.md`](docs/goldbach_math.md) for full definitions of
+the exponential sum Phi(alpha), major/minor arcs, the fiber F(t), the FFT
+analysis, and guidance on interpreting the output.
+
+---
