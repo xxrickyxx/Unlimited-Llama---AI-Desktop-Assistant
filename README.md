@@ -195,7 +195,3 @@ the exponential sum Phi(alpha), major/minor arcs, the fiber F(t), the FFT
 analysis, and guidance on interpreting the output.
 
 ---
-
-```bash
-# (continuing the Installation section)
-choco install tesseract
