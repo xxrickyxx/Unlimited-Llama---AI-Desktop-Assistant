@@ -117,6 +117,56 @@ Performance: Fastest inference, permanent RAM occupation
 
 ---
 
+## 🔬 Experimental: Goldbach Fiber-Sum Tools (S1.2 / Option 2)
+
+The `tools/` directory contains numerical experiments for the Goldbach
+fiber-sum approach.  Full details are in
+[`docs/goldbach/experiment-plan.md`](docs/goldbach/experiment-plan.md).
+
+### Requirements
+```bash
+pip install numpy   # optional but recommended for speed
+```
+
+### CLI Usage
+
+```bash
+# Self-check / doctests (no dependencies required)
+python tools/goldbach_fiber_experiments.py --selfcheck
+
+# Basic run: N=10000, W=30, base α=0/1 (major arc), 10 minor-arc samples
+python tools/goldbach_fiber_experiments.py --N 10000 --W 30
+
+# Minor-arc experiment: α near 3/7, W=210, 200 samples
+python tools/goldbach_fiber_experiments.py --N 50000 --W 210 --a 3 --q 7 --samples 200
+
+# Convergence sweep: N doubles from 1000 to 32000, W=30
+python tools/goldbach_fiber_experiments.py --N 32000 --W 30 --sweep --N0 1000
+
+# Full experiment with custom major-arc threshold Q
+python tools/goldbach_fiber_experiments.py --N 100000 --W 2310 --a 1 --q 11 --samples 500 --Q 0.01
+
+# Quiet mode (suppress per-sample output, print summary only)
+python tools/goldbach_fiber_experiments.py --N 20000 --W 30 --samples 20 --quiet
+```
+
+### Parameters
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--N` | 10000 | Prime upper bound |
+| `--W` | 30 | Modulus (try primorials: 6, 30, 210, 2310) |
+| `--a` | 0 | Numerator of base α = a/q |
+| `--q` | 1 | Denominator of base α = a/q |
+| `--samples` | 10 | Number of minor-arc α values to probe |
+| `--Q` | auto | Major-arc half-width threshold |
+| `--sweep` | off | Enable N-convergence sweep (M5) |
+| `--N0` | 1000 | Starting N for sweep |
+| `--selfcheck` | off | Run doctests and exit |
+| `--quiet` | off | Suppress verbose per-sample output |
+
+---
+
 ## 🔧 Installation
 
 ### 1. Install Tesseract OCR (Required for OCR)
