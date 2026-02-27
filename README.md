@@ -136,15 +136,26 @@ choco install tesseract
 via exponential sums over primes.  It runs automatically with sensible defaults
 and requires no further user input.
 
-### Prerequisites
+### Adesso! (Run now — zero setup)
+
+A single shell script installs the only dependency (numpy) and launches the
+experiment immediately with no further input:
 
 ```bash
-pip install numpy
+bash run_experiment.sh
 ```
 
-### Quick start (defaults: N=1 000 000, W=1024, A=6)
+All CLI arguments are forwarded, so you can also do:
 
 ```bash
+bash run_experiment.sh --save-csv results.csv
+bash run_experiment.sh --N 50000 --W 256 --A 2
+```
+
+### Quick start via Python directly (defaults: N=1 000 000, W=1024, A=6)
+
+```bash
+pip install numpy          # one-time
 python goldbach_experiment.py
 ```
 
