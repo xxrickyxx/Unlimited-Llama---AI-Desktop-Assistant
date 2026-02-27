@@ -117,6 +117,35 @@ Performance: Fastest inference, permanent RAM occupation
 
 ---
 
+## 🔢 Goldbach Research Experiments
+
+This repository also contains a research module exploring the **Goldbach conjecture**
+via the Hardy–Littlewood circle method with the fiber/W-trick, dispersion estimates,
+and Kuznetsov/Kloosterman summation.
+
+- **Research plan & roadmap:** [`docs/GoldbachResearchPlan.md`](docs/GoldbachResearchPlan.md)
+- **Numerical experiment script:** [`tools/goldbach_fiber_experiments.py`](tools/goldbach_fiber_experiments.py)
+
+### Running the Experiment
+
+```bash
+# Basic run (N=200, W=30, top-10 grid points)
+python tools/goldbach_fiber_experiments.py
+
+# Custom even N with a plot (requires matplotlib)
+python tools/goldbach_fiber_experiments.py --N 1000 --w 6 --top 15 --plot
+
+# Larger primorial (W = 2*3*5*7 = 210)
+python tools/goldbach_fiber_experiments.py --N 500 --w 7
+```
+
+The script computes `|S(t/W)|` for `t = 0, …, W-1`, the aliasing count `A(t)`,
+the Hardy–Littlewood asymptotic estimate `R_HL(N)`, and the direct prime-pair
+count `R(N)`.  No external dependencies beyond a standard Python 3.8+ installation
+are required; `matplotlib` is optional for chart output.
+
+---
+
 ## 🔧 Installation
 
 ### 1. Install Tesseract OCR (Required for OCR)
