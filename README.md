@@ -102,6 +102,42 @@ Performance: Fastest inference, permanent RAM occupation
 
 ---
 
+## 🔢 Goldbach Conjecture – Numerical Experiments
+
+This repository includes a standalone numerical experiment tool for the
+**fiber-sum / discrete Fourier-shift** approach to the Goldbach conjecture.
+
+### Quick start
+
+```bash
+pip install numpy
+python goldbach_experiment.py --N 100000 --W 256 --a 1 --q 6 --beta 0.0
+```
+
+### Random-beta sweep (50 samples)
+
+```bash
+python goldbach_experiment.py --N 100000 --W 256 --a 1 --q 6 --samples 50
+```
+
+### Self-check
+
+```bash
+python goldbach_experiment.py --selfcheck
+```
+
+### Run unit tests
+
+```bash
+pip install pytest
+python -m pytest tests/test_goldbach_experiment.py -v
+```
+
+See [`docs/goldbach_experiment.md`](docs/goldbach_experiment.md) for the full
+experimental protocol, mathematical background, and CLI reference.
+
+---
+
 ## ⚙️ System Requirements
 
 ### Minimum
